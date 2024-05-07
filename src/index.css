@@ -1,0 +1,111 @@
+body {
+  background-color: hsl(0, 0%, 10%);
+  display: flex;
+  justify-content: center;
+}
+
+.to-do-list {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.button--add {
+  background-color: hsl(125, 47%, 54%);
+}
+.button--add:hover {
+  background-color: hsl(125, 47%, 44%);
+}
+
+.button--delete {
+  background-color: hsl(10, 90%, 50%);
+}
+.button--delete:hover {
+  background-color: hsl(10, 90%, 40%);
+}
+
+.button--move {
+  background-color: hsl(207, 90%, 64%);
+}
+.button--move:hover {
+  background-color: hsl(207, 90%, 54%);
+}
+
+.button--delete,
+.button--move {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+input[type="text"] {
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+ol {
+  min-width: 80ch;
+  padding: 0;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-inline: 4px;
+  margin-right: auto;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox + label {
+  color: hsl(200, 20%, 20%);
+}
+
+.checkbox:checked + label {
+  color: hsl(200, 20%, 40%);
+}
+
+.checkbox:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
